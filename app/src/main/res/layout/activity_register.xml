@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="Register Now"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/edit_text"
+            android:hint="Email " />
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:hint="Password "/>
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/fullname"
+            android:hint="Fullname"/>
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/address"
+            android:hint="Address"/>
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/gender"
+            android:hint="Gender"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                style="@style/btn_Style"
+                android:id="@+id/btn_submit"
+                android:text="Submit"
+                android:onClick="register"/>
+
+            <Button
+                android:id="@+id/btn_show"
+                style="@style/btn_Style"
+                android:text="Cancel"
+                android:onClick="cancelme"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

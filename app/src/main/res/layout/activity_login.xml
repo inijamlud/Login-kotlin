@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_baseline_history_edu_24"
+        android:contentDescription="Logo Login"/>
+
+    <EditText
+        android:id="@+id/login_username"
+        android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+        android:hint="Username Here"
+        android:inputType="text"
+        style="@style/EditTextLogin"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:drawableLeft="@drawable/ic_baseline_https_24"
+        android:hint="Password Here"
+        android:inputType="textPassword"
+        style="@style/EditTextLogin"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="Login"
+        style="@style/ButtonLogin"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:padding="15dp"
+        android:text="doesnt have an account yet? register here!"
+        android:textSize="12sp" />
+</LinearLayout>
